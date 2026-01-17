@@ -1,16 +1,14 @@
-# Project 2: Scan Directories
+Project 2: Scan Directories
 
 This program scans through a directory tree and prints the total size of all files. It goes in each directory adding up the file sizes and prints the total for each directory.
 
-# Build
-
+Build
 make
 
-# Run
-
+Run
 ./filescanner [directory]
 
-# Function Call Diagram
+Function Call Diagram
 
 main calls scan_directory
 scan_directory opens directory
@@ -21,7 +19,9 @@ if it's a directory, calls scan_directory again (recursion)
 closes directory
 prints directory name and total
 returns total
+
 (AI formatted diagram)
+
 main()
   └── scan_directory()
         ├── opendir()
